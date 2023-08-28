@@ -1,0 +1,42 @@
+body {
+    background-color: rgb(196, 189, 181);
+}
+
+header {
+    background-color: white;
+    border: 1px dashed black;
+    width: 80%;
+    margin: 10px auto;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    background-image: url("portrett.jpg");
+}
+
+article {
+    border: 1px dashed black;
+    padding: 15px;
+    background-color: white;
+    width: 80%;
+    margin: 10px auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.75em;
+}
+
+section {
+    border: 1px dashed black;
+    padding: 15px;
+    background-color: white;
+    width: 80%;
+    margin: 10px auto;
+}
+
+aside {
+    float: left;
+    display: inline;
+}
+
+aside img {
+    width: 300px;
+}
+

@@ -1,0 +1,20 @@
+body {
+    background-color: rgb(99, 48, 30);
+    color: white;
+}
+
+h1 {
+    color:aqua;
+}
+
+a {
+    text-decoration: none;
+}
+
+#stortBilde {
+    width: 50%;
+}
+
+.annenFarge {
+    color: red;
+}
