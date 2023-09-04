@@ -1,0 +1,27 @@
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+#topp {
+    width: 100%;
+    color:blanchedalmond;    
+    margin-bottom: 100px;
+    background-color: burlywood;
+    border: 1px solid black;
+    text-align: center;
+    position: sticky;
+    top: 0;
+
+}
+
+#bunn {
+    width: 80%;
+    color: chocolate;
+    margin: auto;
+    border: 1px solid black;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+}

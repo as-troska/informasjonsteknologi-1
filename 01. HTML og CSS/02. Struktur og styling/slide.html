@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            #topp {
+                width: 300px;
+                height: 500px;
+                background-color: red;
+            }
+
+            #midt {
+                width: 300px;
+                height: 500px;
+                background-color: yellow;
+            }
+
+            #bunn {
+                width: 300px;
+                height: 500px;
+                background-color: blue;
+
+            }
+        </style>
+    </head>
+    <body>
+        
+
+        <div id="topp"></div>
+
+        <div id="midt"></div>
+
+        <div id="bunn"></div>
+
+        <script>
+            let scrollPosition = window.scrollY;
+            
+            let midt = document.getElementById("midt");
+
+            midtPos = midt.getBoundingClientRect();
+
+            console.log(midtPos)
+
+            document.addEventListener("scroll", () => {
+                scrollPosition = window.scrollY;
+                console.log(scrollPosition);
+
+                if (scrollPosition > midtPos.top) {
+                    midt.style.backgroundColor = "green";
+                }
+            })
+        </script>
+    </body>
+</html>

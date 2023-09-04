@@ -1,0 +1,80 @@
+:root {
+--forgrunn: #b5ca8dff;
+--bakgrunn: #8bb174ff;
+--kontrast: #426b69ff;
+--tekst: #222e50ff;
+--merke: #2a4849ff;
+}
+
+body {    
+    background-color: var(--bakgrunn);
+    color: var(--tekst);
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    margin-bottom: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.3em;
+}
+
+main {
+    width: 60%;
+    margin: 0 auto;
+    background-color: var(--forgrunn);
+    color: var(--merke);
+    padding: 15px;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+}
+
+ul {
+    padding: 0;
+    margin: 0;    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;        
+    width: 100%;       
+    background-color: var(--forgrunn);
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--merke);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: inline-block;
+    
+    width: 100%;
+    
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-align: center;
+}
+
+a:hover {
+    background-color: var(--kontrast);
+    color: var(--tekst)
+}
+
+li {    
+    text-align: center;
+    flex: 1;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    min-width: 300px;
+}
+li:hover {
+    background-color: var(--kontrast);
+}
+
+
