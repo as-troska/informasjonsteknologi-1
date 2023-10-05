@@ -11,11 +11,12 @@ body {
     color: var(--tekst);
     margin: 0;
     padding: 0;
+    
 }
 
 nav {
     position: sticky;
-    top: 0;
+    top: 0px;
     margin-bottom: 15px;
     font-family: 'Courier New', Courier, monospace;
     font-size: 1.3em;
@@ -51,9 +52,10 @@ a {
     color: var(--merke);
     padding-top: 10px;
     padding-bottom: 10px;
-    display: inline-block;
+    display: block;
     
     width: 100%;
+    height: 100;
     
     text-transform: uppercase;
     font-weight: bolder;
@@ -69,9 +71,9 @@ li {
     text-align: center;
     flex: 1;
     padding: 0;
-    height: 100%;
-    display: flex;
-    min-width: 300px;
+    height: 100;
+    
+    min-width: 250px;
 }
 li:hover {
     background-color: var(--kontrast);

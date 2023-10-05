@@ -1,0 +1,41 @@
+#gridContainer {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    width: 100%;
+    height: 100vh;
+    grid-template-areas:    "h h h h h h h h"
+                            ". . . . . . . ."
+                            ". n . m m . a ."
+                            ". n . m m . a ."
+                            ". n . m m . a ."
+                            ". . . . . . . ."
+                            "f f f f f f f f"
+                            ;
+}
+
+header {
+    grid-area: h;
+    background-color: cadetblue;
+}
+
+footer {
+    grid-area: f;
+    background-color: brown;
+}
+
+main {
+    grid-area: m;
+    background-color: chocolate;
+    overflow: hidden;
+}
+
+nav {
+    grid-area: n;
+    background-color: darkcyan;
+}
+
+aside {
+    grid-area: a;
+    background-color: chartreuse;
+}

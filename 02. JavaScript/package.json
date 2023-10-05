@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@kant2002/prompt-sync": "^4.2.0"
+  }
+}

@@ -1,0 +1,99 @@
+/*  Oppgåve 1 a og b
+
+#hoved {
+    display: grid;
+    background-color: antiquewhite;
+    grid-template-columns: 50px auto 100px;
+    grid-template-rows: 50px auto 100px;
+}
+
+*/
+
+/* Oppgåve 1 c */
+
+#hoved {
+    display: grid;
+    background-color: antiquewhite;
+    grid-template-columns: 100px 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px 100px;
+    
+}
+
+
+#hoved > div {
+    background-color: aqua;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+}
+
+#sjakk {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    width: 1000px;
+    height: 1000px;    
+}
+
+#sjakk > div:nth-child(-n + 8):nth-child(odd) {
+    background-color: black;
+}
+
+#sjakk > div:nth-child(n + 9):nth-child(-n + 16):nth-child(even) {
+    background-color: black; 
+}
+
+#sjakk > div:nth-child(n + 17):nth-child(-n + 24):nth-child(odd) {
+    background-color: black; 
+}
+
+#sjakk > div:nth-child(n + 25):nth-child(-n + 32):nth-child(even) {
+    background-color: black; 
+}
+
+#sjakk > div:nth-child(n + 33):nth-child(-n + 40):nth-child(odd) {
+    background-color: black; 
+}
+
+#sjakk > div:nth-child(n + 41):nth-child(-n + 48):nth-child(even) {
+    background-color: black; 
+}
+
+#sjakk > div:nth-child(n + 49):nth-child(-n + 56):nth-child(odd) {
+    background-color: black; 
+}
+
+#sjakk > div:nth-child(n + 57):nth-child(-n + 64):nth-child(even) {
+    background-color: black; 
+}
+
+.topp {
+    grid-area: t;
+    background-color: aquamarine;
+}
+
+.venstre {
+    grid-area: v;
+    background-color: beige;
+}
+
+.hoyre {
+    grid-area: h;
+    background-color: yellow;
+}
+
+
+#layout {
+    width: 600px;
+    height: 400px;
+    display: grid;
+    gap: 5px;
+    background-color: #c6c6c6;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:    "t t t t t" 
+                            "v . h h h"
+                            "v . h h h";
+}
+
+
